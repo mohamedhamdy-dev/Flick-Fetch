@@ -18,11 +18,11 @@ export default function Welcome() {
       initial="hidden"
       animate="visible"
       transition={{ type: "spring", visualDuration: 1, bounce: 0.4 }}
-      className="3xl:py-40 flex flex-col items-center justify-center rounded-4xl bg-gradient-to-r from-slate-900/80 to-slate-700/80 py-10 text-center text-white lg:py-[8.8rem]"
+      className="3xl:py-40 flex flex-col items-center justify-center rounded-4xl bg-gradient-to-r from-slate-900/80 to-slate-700/80 py-16 text-center text-white md:py-[8.8rem]"
     >
       <WelcomePageSVG />
       <motion.h1
-        className="mb-4 text-3xl font-bold sm:text-5xl"
+        className="mb-1 text-2xl font-bold sm:text-4xl md:mb-4 md:text-5xl"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.25 }}
@@ -30,7 +30,7 @@ export default function Welcome() {
         Welcome to Flick Fetch
       </motion.h1>
       <motion.p
-        className="mb-6 max-w-md text-sm text-balance sm:text-lg"
+        className="mb-6 max-w-md text-sm text-balance sm:text-base"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 1 }}
@@ -47,8 +47,6 @@ function WelcomePageSVG() {
   return (
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
-      width="150"
-      height="150"
       viewBox="0 0 24 24"
       fill="none"
       animate={{ x: [-20, 20, 0] }}
@@ -58,6 +56,7 @@ function WelcomePageSVG() {
         repeatType: "reverse",
         repeat: Infinity,
       }}
+      className="mb-1 size-[112px] sm:size-[150px]"
     >
       <path
         fill="url(#paint0_linear_2535_6884)"
