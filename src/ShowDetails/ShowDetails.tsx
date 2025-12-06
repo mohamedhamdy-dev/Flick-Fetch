@@ -1,7 +1,7 @@
 import TrailerBox from "./TrailerBox";
 import RatingBox from "./RatingBox";
 import GenreTag from "./GenreTag";
-import Person from "./Person";
+// import Person from "./Person";
 import { motion } from "motion/react";
 import { Link, useLoaderData } from "react-router";
 import RateModal from "../UI/RateModal";
@@ -23,6 +23,8 @@ function ShowDetails() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [yourRate, setYourRate] = useState(0);
   const data = useLoaderData();
+
+  console.log(data);
 
   useEffect(() => {
     if (Number(localStorage.getItem(String(data.imdbId))) !== 0) {
@@ -74,10 +76,10 @@ function ShowDetails() {
               <p className="mb-3 text-base">
                 {decodeHtml(data?.short?.description)}
               </p>
-              <div className="flex flex-col gap-4 xl:flex-row">
+              {/* <div className="flex flex-col gap-4 xl:flex-row">
                 <Person list={data?.short?.director} type="Director" />
                 <Person list={data?.short?.actor} type="Stars" />
-              </div>
+              </div> */}
             </div>
           </div>
 

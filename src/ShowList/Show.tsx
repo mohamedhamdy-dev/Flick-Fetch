@@ -33,7 +33,7 @@ function Show({ show }: ShowProps) {
     >
       <Link
         to={`/show-details?tt=${show["#IMDB_ID"]}`}
-        className="grid size-full min-h-24 grid-cols-[90px_1fr_1fr] items-center gap-5 p-2 px-10 ring-1 ring-transparent focus:ring-white focus:outline-none sm:grid-cols-[90px_auto_90px]"
+        className="grid size-full min-h-24 grid-cols-[90px_1fr_1fr] items-center gap-2 p-4 ring-1 ring-transparent focus:ring-white focus:outline-none sm:grid-cols-[90px_auto_90px] sm:p-4"
       >
         {poster ? (
           <img
@@ -47,14 +47,14 @@ function Show({ show }: ShowProps) {
           </div>
         )}
 
-        <div className="col-span-2 col-start-1 row-start-2 text-nowrap sm:col-span-1 sm:col-start-2 sm:row-start-1">
+        <div className="col-span-2 col-start-2 row-start-1 text-nowrap sm:col-span-1 sm:col-start-2 sm:row-start-1">
           <p>{title}</p>
           <p>{year}</p>
           <p>{actors}</p>
         </div>
-        <div className="col-span-2 col-start-2 row-start-1 text-center sm:col-span-1 sm:col-start-3">
-          <p>Rank</p>
-          <p>#{rank}</p>
+        <div className="col-span-3 col-start-1 row-start-2 flex items-center justify-center gap-1 self-center text-center sm:col-span-1 sm:col-start-3 sm:row-start-1">
+          <span>Rank</span>
+          <span>#{rank}</span>
         </div>
       </Link>
     </motion.li>

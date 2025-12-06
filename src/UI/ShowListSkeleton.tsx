@@ -15,10 +15,10 @@ export default ShowListSkeleton;
 function ShowSkeleton() {
   return (
     <li className="w-full cursor-pointer rounded-4xl bg-black text-white">
-      <a className="grid size-full min-h-24 grid-cols-[90px_1fr_1fr] items-center gap-5 p-2 px-10 ring-1 ring-transparent focus:ring-white focus:outline-none sm:grid-cols-[90px_auto_90px]">
-        <div className="col-start-1 row-start-1 flex h-[100px] w-[85px] items-center justify-center overflow-hidden rounded-lg bg-black text-center">
+      <a className="grid size-full min-h-24 grid-cols-[90px_1fr_1fr] items-center gap-2 p-4 ring-1 ring-transparent focus:ring-white focus:outline-none sm:grid-cols-[90px_auto_90px] sm:p-4">
+        <div className="w-full cursor-pointer rounded-4xl bg-black text-white focus:outline-none">
           <svg
-            className="h-10 w-10 animate-pulse text-[#3ea9ff]"
+            className="mx-auto size-10 animate-pulse text-[#3ea9ff]"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
@@ -29,14 +29,14 @@ function ShowSkeleton() {
           </svg>
         </div>
 
-        <div className="col-span-2 col-start-1 row-start-2 text-nowrap sm:col-span-1 sm:col-start-2 sm:row-start-1">
-          <div className="mb-1 h-4 w-3/4 animate-pulse rounded bg-[#3ea9ff]/90"></div>
-          <div className="mb-1 h-4 w-1/2 animate-pulse rounded bg-[#3ea9ff]/90"></div>
-          <div className="h-4 w-1/4 animate-pulse rounded bg-[#3ea9ff]/90"></div>
+        <div className="col-span-2 col-start-2 row-start-1 text-nowrap sm:col-span-1 sm:col-start-2 sm:row-start-1">
+          <div className="mb-1 h-4 w-32 animate-pulse rounded bg-[#3ea9ff]/90"></div>
+          <div className="mb-1 h-4 w-34 animate-pulse rounded bg-[#3ea9ff]/90"></div>
+          <div className="h-4 w-36 animate-pulse rounded bg-[#3ea9ff]/90"></div>
         </div>
-        <div className="col-span-2 col-start-2 row-start-1 text-center sm:col-span-1 sm:col-start-3">
-          <div className="mb-1 h-4 w-1/2 animate-pulse rounded bg-[#3ea9ff]/90"></div>
-          <div className="h-4 w-1/4 animate-pulse rounded bg-[#3ea9ff]/90"></div>
+        <div className="col-span-3 col-start-1 row-start-2 flex items-center justify-center gap-1 self-center text-center sm:col-span-1 sm:col-start-3 sm:row-start-1">
+          <div className="h-4 w-10 animate-pulse rounded bg-[#3ea9ff]/90"></div>
+          <div className="h-4 w-10 animate-pulse rounded bg-[#3ea9ff]/90"></div>
         </div>
       </a>
     </li>

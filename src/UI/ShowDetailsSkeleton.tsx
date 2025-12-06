@@ -57,10 +57,10 @@ function ShowDetailsSkeleton() {
 
       <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
         <div className="w-full max-w-[800px] md:w-3/4">
-          <ul className="mb-3 flex items-center gap-2">
+          {/* <ul className="mb-3 flex items-center gap-2">
             <li className="animate-pulse rounded-full bg-[#3ea9ff]/90 px-2 py-1"></li>
             <li className="animate-pulse rounded-full bg-[#3ea9ff]/90 px-2 py-1"></li>
-          </ul>
+          </ul> */}
           <div className="flex flex-col">
             <div className="flex flex-col gap-4 xl:flex-row">
               <div className="flex rounded-lg bg-gradient-to-r from-slate-900 to-slate-700 p-2 text-nowrap sm:flex-row md:gap-3 xl:px-4">
