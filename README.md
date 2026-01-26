@@ -1,7 +1,6 @@
 # Flick Fetch
 
-Flick Fetch is a frontend web application built with React, focused on delivering a smooth and engaging media browsing experience.  
-The project emphasizes modern UI patterns, responsive layouts, and interactive user experiences.
+Flick Fetch is a stylish movie and TV show browser that fetches data from IMDb, enhanced with smooth animations and a custom-designed UI crafted by me.
 
 ---
 
