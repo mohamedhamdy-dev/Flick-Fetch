@@ -1,50 +1,87 @@
-# React + TypeScript + Vite
+# Flick Fetch
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Flick Fetch is a frontend web application built with React, focused on delivering a smooth and engaging media browsing experience.  
+The project emphasizes modern UI patterns, responsive layouts, and interactive user experiences.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 Overview
 
-## Expanding the ESLint configuration
+This project was developed as part of a personal portfolio to demonstrate:
+- Building modern React applications with TypeScript
+- Implementing client-side routing and navigation
+- Creating responsive and interactive interfaces
+- Managing UI behavior for media-focused applications
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The application is designed to be flexible and adaptable to different content-driven use cases.
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Live Demo
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+The application will be available at:  
+🔗 https://flick-fetch.vercel.app/
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+---
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## ✨ Features
+
+- Component-based architecture
+- Client-side routing
+- Responsive design across devices
+- Media playback integration
+- Pagination for large content sets
+- Animated UI interactions
+- Clean and modern interface
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- React
+- TypeScript
+- Vite
+- React Router
+
+### Styling & UI
+- Tailwind CSS
+- Animation utilities
+- Icon libraries
+
+### Media & Utilities
+- Media player integration
+- Pagination helpers
+
+### Tooling
+- ESLint
+- Prettier
+- PostCSS
+
+---
+
+## 📌 Usage
+
+- Browse and navigate through media content
+- Interact with dynamic and animated UI elements
+- Experience responsive layouts on different screen sizes
+- Navigate content efficiently using pagination
+
+---
+
+## 🧩 Challenges & Learnings
+
+- Managing UI state for media-based components
+- Designing smooth animations without impacting performance
+- Structuring a scalable React + TypeScript project
+- Building responsive layouts for diverse screen sizes
+
+---
+
+## 🚧 Future Improvements
+
+- Add advanced filtering and search
+- Improve performance and loading states
+- Enhance accessibility
+- Expand media-related features
+- Introduce testing and error handling
